@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    <title>Multi-step Register form</title>
+</head>
+
+<body>
+    <main>
+        <div class="slider">
+            <div class="slider__inner" id="slider">
+                <section class="register">
+                    <form id="register-form" action="">
+                        <h4 class="reg">Register</h4>
+                        <p>Name</p>
+                        <label for="name"><input class="input"  id="name" name="name" required
+                                placeholder="Enter your name"></label>
+                        <p class="email">Email</p>
+                        <label for="email"><input class="input" id="email" name="email" required
+                                placeholder="Enter your email"></label>
+                        <button type="submit" class="btn" id="btn">Continue</button>
+                    </form>
+                    
+                </section>
+
+                <section class="register">
+                    <form id="register-form2" action="">
+                        <h4 class="topics">Which topics you are interested in?</h4>
+                        <div class="checkbox-button">
+                            <input id="checkbox" type="checkbox" value="Software Development">
+                            <label for="checkbox">Software Development</label>
+                        </div>
+                        <div class="checkbox-button">
+                            <input id="checkb" type="checkbox" value="User Experience">
+                            <label for="checkb">User Experience</label>
+                        </div>
+                        <div class="checkbox-button">
+                            <input id="check" type="checkbox" value="Graphic Design">
+                            <label for="check">Graphic Design</label>
+                        </div>
+                        <button type="submit" class="btn" id="btn2">Continue</button>
+                    </form>
+                </section>
+
+                <section class="register">
+                    <h4 class="topics">Summary</h4>
+                    <p id="nameResponse"></p>
+                    <p id="emailResponse"></p>
+                    <p id="topics">Topics:</p>
+                    <button class="btn" id="btn3">Confirm</button>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
