@@ -56,8 +56,24 @@ document.addEventListener('DOMContentLoaded', function () {
         form2.reset()
     })
 
+    const messageElement = document.getElementById("message");
+
     btn3.addEventListener('click', () => {
-        window.location.reload(true)    
+        messageElement.textContent = "✅ Sent Data"
+        messageElement.style.display = "block"
+        messageElement.style.background = "linear-gradient(#845eee, #652cd1)"
+        messageElement.style.color = "white"
+        messageElement.style.padding = "10px 30px"
+        messageElement.style.borderRadius = "10px"
+        messageElement.style.position = "absolute"
+        messageElement.style.top = "20px"
+        messageElement.style.right = "10px"
+        setTimeout(() => {
+            messageElement.style.display = "none"
+        }, 3000)
+
+
+        // window.location.reload(true)    
 
         // index = 0
         // slider.style.transform = `translateX(-${index}%)`
